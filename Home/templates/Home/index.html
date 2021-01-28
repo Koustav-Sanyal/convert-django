@@ -1,0 +1,868 @@
+{% extends "Home/base.html" %}
+{% block content %}
+{% load static %}
+
+<!--BANNER-->
+<section>
+    <div class="lgx-banner lgx-banner-typed">
+        <div class="lgx-banner-style">
+            <div class="lgx-inner lgx-inner-fixed">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-banner-info">
+                                <h3 class="subtitle" style="font-weight: bold">WELCOME TO ISTE</h3>
+                                <h2 class="title">Students' Chapter <span id="lgx-typed-string">NIT DURGAPUR</span></h2>
+                                <div class="btn-area">
+                                    <a class="lgx-btn lgx-scroll active" href="#lgx-about"
+                                        style="color: #000000; font-weight: bold">GET STARTED</a>
+                                    <a class="lgx-btn lgx-btn-border lgx-scroll active" href="#lgx-courses"
+                                        style="color:#000000; font-weight: bold">OUR EVENTS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </div>
+</section>
+<!--BANNER END-->
+
+
+<!--ABOUT-->
+<section>
+    <div id="lgx-about" class="lgx-about">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                        <div class="lgx-about-area">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">WHO ARE WE?</h2>
+                                <h4 class="heading-subtitle"><b>The Indian Society for Technical Education(ISTE)</b> is
+                                    the leading National Professional non-profit making Society for the Technical
+                                    Education System in our country with the motto of <b>Career Development of Teachers
+                                        and Personality Development of Students and overall development of our Technical
+                                        Education System</b> operating in association with <b>All India Council for
+                                        Technical Education (AICTE)</b> and other <b>International Projects.</b></h4>
+                            </div>
+                            <div class="lgx-about-content">
+                                <p class="text">
+                                    <b>ISTE NIT Durgapur</b> took birth on the auspicious occasion of Saraswati Puja Day
+                                    way back in February,1995 in our erstwhile called <b>REC Durgapur</b> and is the
+                                    <b>Oldest Student Chapter of Eastern India</b>.Additionally,ISTE NIT Durgapur
+                                    nominates projects and papers for the <b>Indian Journal of Technical Education
+                                        (IJTE)</b> published by the ISTE HQ,New Delhi on quarterly basis with the aim to
+                                    provide an appropriate platform presenting <b>well
+                                        considered,meaningful,constructively thought provoking,non-political and
+                                        non-conventional</b> but critically analysing and synthesizing present and
+                                    future aspects of the technical education system supported with meaningful
+                                    suggestions for solutions,refinement and innovation.
+                                </p>
+                                <a class="lgx-btn lgx-btn-sm lgx-btn-border" href="{% url 'site-about'  %}">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="lgx-video-area-bg lgx-video-trans">
+                            <figure>
+                                <a href="#"><img src="{% static 'Home/img/Cover1.jpg' %}" alt="Special Food"></a>
+                                <figcaption>
+                                    <div class="video-icon">
+                                        <div class="lgx-vertical">
+                                            <a id="myModalLabel" class="icon" href="#" data-toggle="modal"
+                                                data-target="#lgx-modal">
+                                                <i class="fa fa-play" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <!-- Modal-->
+                            <div id="lgx-modal" class="modal fade lgx-modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">×</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe
+                                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fistenitd%2Fvideos%2F337402543933220&show_text=false&width=734&height=411&appId"
+                                                width="734" height="411" style="border:none;overflow:hidden"
+                                                scrolling="no" frameborder="0" allowTransparency="true"
+                                                allow="encrypted-media" allowFullScreen="true"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- //.Modal-->
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.INNER -->
+    </div>
+</section>
+<!--ABOUT END-->
+
+<!--EVENTS-->
+<section>
+    <div id="lgx-events1" class="lgx-events1">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading-title">Upcoming Event- The Cognitive Intelligence Test</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-events-area">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="lgx-featured-event">
+                                        <figure>
+                                            <a href="#"><img src="{% static 'Home/img/CIT_6.jpeg' %}"
+                                                    alt="featured event"></a>
+
+                                        </figure>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="lgx-single-event">
+                                        <div class="event-info">
+
+                                            <h3 class="text-center"><b>Unveiling the details for Cognitive Intelligence
+                                                    Test </b></h3><br>
+                                            <h3 class="text-center"><b><u>Description:</u></b></h3><br>
+                                            <p class="text-center"> The test comprises of basic mathematical aptitude,
+                                                verbal and logical reasoning and data interpretation.</p>
+
+                                            <!-- <h3 class="text-center"><b><u>Rounds:</u></b></h3><br>
+                                            <p class="text-center"><b> Round 1:</b>   20 MCQs on Math, Aptitude, and Programming</p><br>
+                                            <p class="text-center"><b>Round 2: </b>  5 questions on Data Structure and Algorithm.</p><br> -->
+
+                                            <h3 class="text-center"><b><u>Date And Time:</u></b></h3><br>
+                                            <p class="text-center"> 7:00pm on 17th December 2020</p><br>
+                                            <!-- <p class="text-center"><b>Round 2: </b> 7:30pm - 9:30pm on 5th October</p><br> -->
+
+                                            <!-- <h3 class="text-center"><b><u>Link:</u></b></h3><br> -->
+                                            <p class="text-center"> <a
+                                                    href="https://docs.google.com/forms/d/1qI2wLsS6cZ0jY6PcyIeUkwegYgQxRb_Hn7J9xfPF3P8/edit">Click
+                                                    here : gform/cit4.0</a> to Register for CIT 4.0</p><br>
+                                            <!-- <p class="text-center"><b>Round 2: </b> <a href="http://bit.ly/runtimeterror">http://bit.ly/runtimeterror</a></p><br> -->
+
+                                            <p class="text-center"> Prizes upto 4k And Merit Certificates Would Be
+                                                Awarded To The Top Performers. </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.INNER -->
+    </div>
+</section>
+<!--EVENTS END-->
+
+<section>
+    <div id="lgx-courses" class="lgx-courses">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading-title">OUR EVENTS</h2>
+                            <h4 class="heading-subtitle">Our Nine Awesome Events are waiting just for You.<br>Go Ahead
+                                and Explore</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+                <div class="lgx-tab">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-filter-area">
+                                <ul id="lgx-filter" class="lgx-filter list-inline text-center">
+                                    <li class="active"><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter="*">ALL</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".design">AISEC</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".html">Industrial Trips</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".cs">ITM</a>
+                                    </li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".wordpress">CIT</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".joomla">WORKSHOPS</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".design">SCIJECT</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".design">Coniecto</a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".design">Internship</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//. ROW-->
+
+                    <div class="row">
+                        <div id="lgx-grid-wrapper" class="lgx-grid-wrapper">
+                            <!--lgx-list-wrapper-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4 design">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/aissec1.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="{% url 'site-AISEC' %}">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/aisec5-min.png' %}" alt="course">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">AISEC</a></h4>
+                                                    <h5 class="subtitle">Held in Even Semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="{% url 'site-AISEC' %}"> All India Students'
+                                                    Engineering Congress</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>55</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4 html">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/indstrip1.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="{% url 'site-indtrip' %}">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/inds2.png' %}" alt="course">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="{% url 'site-indtrip' %}">Industrial
+                                                            Trips</a></h4>
+                                                    <h5 class="subtitle">Held in even semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="{% url 'site-indtrip' %}"> Industrial Trips -
+                                                    Experience Changes in Industry<br></a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>50</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4 joomla">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/wrksp2-min.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/wrksp3-min.png' %}" alt="course">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">Workshop</a></h4>
+                                                    <h5 class="subtitle">Held in odd semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Workshop on Data<br> Analytics</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>50</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4 wordpress">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/cit1.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="{% url 'site-cit' %}">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{%static 'Home/img/cit5-min.png' %}" alt="course">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="{% url 'site-cit' %}">CIT</a></h4>
+                                                    <h5 class="subtitle">Held in odd semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="{% url 'site-cit' %}"> Cognitive Intelligence
+                                                    Test</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>60</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4 cs">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{%  static 'Home/img/itm1.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="{% url 'site-ITM' % }">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/itm2.png' %}" alt="course">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="{% url 'site-ITM' %}">ITM</a></h4>
+                                                    <h5 class="subtitle">Held in odd semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="{% url 'site-ITM' %}"> Inter College Technical
+                                                    Meet</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>47</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/winter2-min.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/winter1-min.png' %}" alt="courses author">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">Internship</a></h4>
+                                                    <h5 class="subtitle">Held in odd semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Short Term Winter Course</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>46</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/sciject2-min.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/sciject1-min.png' %}"
+                                                    alt="courses author">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">SCIJECT</a></h4>
+                                                    <h5 class="subtitle">Held in even semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Technology Integration-BMEP</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>72</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{% static 'Home/img/coniecto2-min.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/coniecto1.png' %}" alt="courses author">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">Coniecto</a></h4>
+                                                    <h5 class="subtitle">Held in even semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Guess the personality</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>62</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{%  static 'Home/img/Spec.png' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{%   static 'Home/img/cmgsn5.png' %}" alt="courses author">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">Spectrum</a></h4>
+                                                    <h5 class="subtitle">Held in even semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Series Of Events</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>10</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+                            <div class="lgx-grid-item col-xs-12 col-sm-6 col-md-4">
+                                <div class="lgx-single-course">
+                                    <div class="lgx-single-course-inner">
+                                        <figure>
+                                            <img src="{%  static 'Home/img/Runtime.jpeg' %}" alt="course">
+                                            <figcaption>
+                                                <div class="lgx-hover-link">
+                                                    <div class="lgx-vertical">
+                                                        <a href="#">
+                                                            <i class="fa fa-book"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="course-info">
+                                            <div class="course-author">
+                                                <img src="{% static 'Home/img/code1.jpg'  %}" alt="courses author">
+                                                <div class="author-info">
+                                                    <h4 class="title"><a href="#">RUNTIME TERROR</a></h4>
+                                                    <h5 class="subtitle">Held in odd semester</h5>
+                                                </div>
+                                            </div>
+                                            <h3 class="title"><a href="#"> Coding Contest</a></h3>
+                                            <div class="course-bottom">
+                                                <ul class="list-inline">
+                                                    <li><a href="#"><i class="fa fa-info-circle"></i></a></li>
+
+                                                    <li><a href="#"><i class="fa fa-commenting"></i>62</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ITEM-->
+                        </div>
+                    </div>
+                    <!--//. ROW-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--TESTIMONIAL -->
+<section>
+    <div id="lgx-testimonials" class="lgx-testimonials">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading-title">FACULTY ADVISORS</h2>
+                            <h4 class="heading-subtitle">Some Valuable words from desk of faculty advisors</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="lgx-testi-single">
+                        <figure class="lgx-client-image">
+                            <img src="{% static 'Home/img/fa2.png' %}" alt="testpersion1" />
+                        </figure>
+                        <div class="testi-info-area">
+                            <p class="lgx-review">
+                                Get abuzz and shroud yourself with knowledge to extinguish moribundity,as knowledge is a
+                                wing with which one can fly to the heaven.<br> <br>Welcome.
+                            </p>
+                            <br>
+
+                            <h4 class="lgx-client-name">Dr. Anita Pal</h4>
+                            <h5 class="lgx-client-title">Chief-faculty advisor</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="lgx-testi-single">
+                        <figure class="lgx-client-image">
+                            <img src="{% static 'Home/img/rowdra.png' %}" alt="testpersion1" />
+                        </figure>
+                        <div class="testi-info-area">
+                            <p class="lgx-review">
+                                Nothing in this world can take the place of persistence. Talent will not: nothing is
+                                more common than unsuccessful men with talent. Genius will not; unrewarded genius is
+                                almost a proverb. Education will not: the world is full of educated derelicts.
+                                Persistence and determination alone are omnipotent.
+                            </p>
+                            <h4 class="lgx-client-name">Prof. Rowdra Ghatak</h4>
+                            <h5 class="lgx-client-title">Faculty Advisor</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--TESTIMONIAL END-->
+
+
+
+<!--MILESTONE-->
+<section>
+    <div id="lgx-register" class="lgx-register">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="lgx-registration-area">
+                            <div class="lgx-heading-registration">
+                                <h3 class="subtitle">What are you Waiting For</h3>
+                                <h2 class="title">Subscribe Today!</h2>
+                            </div>
+                            <div class="lgx-registration-info">
+                                <p class="text">For Information of our latest updates about events and extracurricular
+                                    activities,Subscribe via email and facebook.Hurry...</p>
+                                <a class="lgx-btn registration-btn"
+                                    href="{% url 'site-registration' %}">Registration</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                    </div>
+                </div>
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+<!--MILESTONE END-->
+
+
+
+<!--BLOG -->
+<section>
+    <div id="lgx-blog" class="lgx-blog">
+        <div class="lgx-inner">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading lgx-heading-white">
+                            <h2 class="heading-title">News Updates From Facebook Page</h2>
+                            <h4 class="heading-subtitle">Latest News Updates You Dont Miss Out!</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fistenitd%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=393682404702774"
+                    width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowTransparency="true" allow="encrypted-media"></iframe>
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+<!--BLOG END-->
+
+
+
+<!--PHOTO GALLERY-->
+<section>
+    <div id="lgx-photo-gallery" class="lgx-photo-gallery lgx-gallery-without-subsctibe">
+        <!--lgx-gallery-without-subsctibe-->
+        <div id="lgx-memorisinner" class="lgx-memorisinner">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">Photo Gallery</h2>
+                                <h4 class="heading-subtitle">Some Amazing Pics From Our Campus</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lgx-gallery-area">
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img title="Memories One" src="{% static 'Home/img/gallery1-min.png' %}"
+                                    alt="Memories one" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories One" href="{% static 'Home/img/gallery1-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img src="{% static 'Home/img/gallery2-min.png' %}" alt="Memories Two"
+                                    title="Memories Two" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories Two" href="{% static 'Home/img/gallery2-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img src="{% static 'Home/img/gallery3-min.png' %}" alt="Memories Three"
+                                    title="Memories Three" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories Three" href="{% static 'Home/img/gallery3-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img src="{% static 'Home/img/gallery4-min.png' %}" alt="Memories Four"
+                                    title="Memories Four" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories Four" href="{% static 'Home/img/gallery4-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img src="{% static 'Home/img/gallery5-min.png' %}" alt="Memories Five"
+                                    title="Memories Five" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories Five" href="{% static 'Home/img/gallery5-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="lgx-gallery-single">
+                            <figure>
+                                <img src="{% static 'Home/img/gallery6-min.png' %}" alt="Memories Six"
+                                    title="Memories Six" />
+                                <figcaption class="lgx-figcaption">
+                                    <div class="lgx-hover-link">
+                                        <div class="lgx-vertical">
+                                            <a title="Memories Six" href="{% static 'Home/img/gallery6-min.png' %}">
+                                                <i class="fa fa-search fa-2x"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!--//.CONAINER-->
+            </div>
+        </div>
+        <!--//.lgx CONTACT INNER-->
+    </div>
+</section>
+{% endblock content %}
+
+
+
+<!--HEADER END-->
+
+
+
+<!--PHOTO GALLERY END-->
+
+
+
+
+<!--FOOTER-->
