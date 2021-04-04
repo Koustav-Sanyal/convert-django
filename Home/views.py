@@ -25,6 +25,7 @@ def indtrip(request):
 
 def ITM(request):
     return render(request, 'Home/ITM.html')
+    
 
 def registration(request):
     return render(request, 'Home/registration.html')

@@ -1,0 +1,62 @@
+{% extends "Home/base.html" %}
+{% block content %}
+{% load static %}
+
+<section>
+    <div class="lgx-banner lgx-banner-inner">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading-area">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading-title">Industrial Trips</h2>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="{% url 'site-index' %}"><i class="icon-home6"></i>Events</a></li>
+                                <li class="active">Industrial Trips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--//.ROW-->
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+
+
+    <!--ABOUT-->
+    <section>
+        <div id="lgx-about" class="lgx-about lgx-about-bottom"> <!--lgx-about-bottom-->
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <div class="lgx-about-area">
+                                <div class="lgx-heading">
+                                    <h2 class="heading-title">About Industrial Trips</h2>
+                                    <h4 class="heading-subtitle">The rapid changes that the world is currently going through,coupled with changes in engineering education in this era of 21st century;an opportunity to witness and get hands on experience of the processes and functions of a manufacturing industry or a power generating station is a blessing much sought after especially by the undergraduates as a penultimate before they actually kick-start their career as a young,bright practising engineers.We at ISTE give our best effort for regularly organizing such Industrial visits and are thankful to Damodar Valley Corporation-DTPS,Alloy Steel Plant(Under SAIL),Durgapur,Birla Cement Corporation,Durgapur for being reliable partners in sharing a common vision for uplifting the standards of technical education in India by pursuing our endeavour.
+                                    </h4>
+                                </div>
+                                <div class="lgx-about-content">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <img src="{% static 'Home/imag/abt.png' %}" alt="about">
+                            
+                        </div>
+                        
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+        <br><br><br>
+    </section>
+    <!--ABOUT END-->
+
+    {% endblock content %}
