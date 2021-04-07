@@ -1,0 +1,63 @@
+{% extends "Home/base.html" %}
+{% block content %}
+{% load static %}
+
+
+<section>
+    <div class="lgx-banner lgx-banner-inner">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading-area">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading-title">All India Students' Engineering Congress</h2>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="{% url 'site-index' %}"><i class="icon-home6"></i>Events</a></li>
+                                <li class="active">AISEC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--//.ROW-->
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+
+
+    <!--ABOUT-->
+    <section>
+        <div id="lgx-about" class="lgx-about lgx-about-bottom"> <!--lgx-about-bottom-->
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <div class="lgx-about-area">
+                                <div class="lgx-heading">
+                                    <h2 class="heading-title">About AISEC</h2>
+                                    <h4 class="heading-subtitle">The All India Students' Engineering Congress is our flagship and an annual symposium organized in every even semester aimed at providing students with a professionally sumptuous platform to deepen one's technological competency,scientific temperament and determination to motivate oneself and to keep abreast with cutting edge technology through a cascade of events such as Technical Paper Presentation,Project Contest,Expert Lectures,Seminars to name a few.Handful of the top notch,pragmatic,original and technically sound papers and projects are nominated for publication in the coveted Indian Journal of Technical Education(IJTE) published by ISTE Headquarters,New Delhi.
+                                    </h4>
+                                </div>
+                                <div class="lgx-about-content">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <img src="{% static 'Home/img/abt.png' %}" alt="about">
+                            
+                        </div>
+                        
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+        <br><br><br>
+    </section>
+    <!--ABOUT END-->
+
+{% endblock content %}
