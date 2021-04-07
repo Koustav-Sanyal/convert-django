@@ -1,0 +1,112 @@
+{% extends "Home/base.html" %}
+{% load static %}
+{% block content %}
+<style>
+    .team_header {
+      text-align: center;
+      border: 2px solid #12489E;
+      border-radius: 15px;
+    }
+    .team_header p {
+      font-size: 3rem;
+      font-weight: bold;
+      color: black;
+      padding: 10px;
+    }
+    </style>
+
+<section>
+    <div class="lgx-banner lgx-banner-inner">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading-area">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading-title">OUR SPONSORS</h2>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li><a href="index.html"><i class="icon-home6"></i>Home</a></li>
+                                <li class="active">Sponsors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+
+
+
+
+<!--SPONSORS-->
+<section>
+    <div id="lgx-teachers" class="lgx-teachers">
+        <div class="lgx-inner">
+            <div class="container">
+              <div class="team_header"><p>Title Sponsor : IOCL &nbsp & &nbsp  Associate Sponsor : SBI</p></div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="lgx-single-teacher">
+                            <figure>
+                                <a href="#"><img src="{%static 'Home/img/sponsors/iocl.png' %}" alt="IOCL" /></a>
+                                <figcaption>
+                                    <h3 class="teacher-name"><a href="https://www.iocl.com/">Indian Oil Corporation Limited</a><span>Title<br>Sponsor</span></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="lgx-single-teacher">
+                            <figure>
+                                <a href="#"><img src="{%static 'Home/img/sponsors/sbi.jpg' %}" alt="SBI" /></a>
+                                <figcaption>
+                                    <h3 class="teacher-name"><a href="https://www.onlinesbi.com/">State Bank Of India </a><span>Associate<br>Sponsor</span></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            <div class="team_header"><p>Other Sponsors</p></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-teacher">
+                            <figure>
+                                <a href="#"><img src="{%static 'Home/img/sponsors/pizzahut.png' %}" alt="Pizza_Hut" /></a>
+                                <figcaption>
+                                    <h3 class="teacher-name"><a href="https://www.pizzahut.co.in/">Pizza Hut</a><span>Sponsor</span></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-teacher">
+                            <figure>
+                                <a href="#"><img src="{%static 'Home/img/sponsors/arihanticecream.jpg' %}" alt="Arihant_Icecream" /></a>
+                                <figcaption>
+                                    <h3 class="teacher-name"><a href="http://arihantnaturals.com/">Arihant Icecream</a><span>Sponsor</span></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-teacher">
+                            <figure>
+                                <a href="#"><img src="{%static 'Home/img/sponsors/techgurus.jpg' %}" alt="techgurus" /></a>
+                                <figcaption>
+                                    <h3 class="teacher-name"><a href="https://www.techgurusventure.com/">Tech Gurus </a><span>Sponsor</span></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--TEACHERS END-->
+
+
+{% endblock %}
